@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+body,html {
+	height: 100%;
+}
+.viewport {
+	height: 100%;
+}
+p,h2{
+	color: white;
+}
+
+
+.f60 {
+	height: 66.66%;
+}
+.f40 {
+	height: 33.3%
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	overflow: auto;
+}
+
+.title-flex-box {
+	
+	
+	background-color: black;
+	margin:auto;
+	font-family: 'Open Sans', sans-serif;	
+	text-align: center;
+	display: flex;
+		flex-direction: row; /* row, heading apna row wise aayega*/
+		flex-wrap: wrap; /* wrap, taaki chize wrap ho jaaye agar choti size hui to*/
+		justify-content: center; /*taaki content starting se chipak ke rahe*/
+		align-content: center; /*taaki content hamesha niche hi chipke rahe*/
+		
+		align-items: flex-end; /*taaki content box ke niche chipak ke rahe*/ /*MQ*/
+		padding-bottom: 50px; /*MQ*/
+
+
+}
+.title-flex-box h2 {
+	font-size: 70px; /*MQ*/
+}
+
+.sub-text-flex-box {
+	
+	
+	background-color: black;
+	margin:auto;	
+
+	display: flex;
+		flex-direction: row; /* row, heading apna row wise aayega*/
+		flex-wrap: wrap; /* wrap, taaki chize wrap ho jaaye agar choti size hui to*/
+		justify-content: center; /*taaki content center se chipak ke rahe*/
+		align-items: stretch; /*taaki content box ke pura part cover kar le
+								ab iske andar aane waale hai p tags jinko column mein
+								display karne ke hai so isiliye stretch lena bhetar hai*/
+		align-content: flex-start; /*taaki jab bhaut saare aa jaye to content hamesha 
+								upar hi chipke rahe*/
+
+}
+.sub-text-flex-box p {
+	font-size: 20px; /*MQ*/
+	padding: 10px;
+	line-height: 150%;
+	font-family: 'Merriweather',serif;
+}
+
+@media screen and (max-width: 360px) {
+	.title-flex-box {
+		align-items: flex-start;
+		padding-top: 30px;
+		font-size: 35px;
+	}	
+	.sub-text-flex-box p{
+		font-size: 15px;
+	}
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
