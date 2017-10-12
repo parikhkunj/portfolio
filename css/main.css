@@ -86,6 +86,15 @@ p,h2{
 		font-size: 15px;
 	}
 }
+.huge {
+	font-size: 50px;
+	color: white;
+}
+.huge:hover {
+	font-size: 55px;
+	color: white;
+}
+
 
 .carousel-control.left, .carousel-control.right {
    background-image:none !important;
