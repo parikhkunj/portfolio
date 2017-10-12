@@ -40,18 +40,18 @@ p,h2{
 	font-family: 'Open Sans', sans-serif;	
 	text-align: center;
 	display: flex;
-		flex-direction: row; /* row, heading apna row wise aayega*/
-		flex-wrap: wrap; /* wrap, taaki chize wrap ho jaaye agar choti size hui to*/
-		justify-content: center; /*taaki content starting se chipak ke rahe*/
-		align-content: center; /*taaki content hamesha niche hi chipke rahe*/
+		flex-direction: row; /* row, heading will be displayed row wise*/
+		flex-wrap: wrap; /* wrap, so that it gets wrap if things are small*/
+		justify-content: center; /*so that contents stays in the center*/
+		align-content: center; /*so that it always align in the center*/
 		
-		align-items: flex-end; /*taaki content box ke niche chipak ke rahe*/ /*MQ*/
-		padding-bottom: 50px; /*MQ*/
+		align-items: flex-end; /*so thst goes in the end of the container box*/ /*Also in MediaQuery*/
+		padding-bottom: 50px; /*Also in MQ*/
 
 
 }
 .title-flex-box h2 {
-	font-size: 70px; /*MQ*/
+	font-size: 70px; /*Also in MQ*/
 }
 
 .sub-text-flex-box {
@@ -61,14 +61,12 @@ p,h2{
 	margin:auto;	
 
 	display: flex;
-		flex-direction: row; /* row, heading apna row wise aayega*/
-		flex-wrap: wrap; /* wrap, taaki chize wrap ho jaaye agar choti size hui to*/
-		justify-content: center; /*taaki content center se chipak ke rahe*/
-		align-items: stretch; /*taaki content box ke pura part cover kar le
-								ab iske andar aane waale hai p tags jinko column mein
-								display karne ke hai so isiliye stretch lena bhetar hai*/
-		align-content: flex-start; /*taaki jab bhaut saare aa jaye to content hamesha 
-								upar hi chipke rahe*/
+		flex-direction: row;/* row, heading will be displayed row wise*/
+		flex-wrap: wrap; /* wrap, so that it gets wrap if things are small*/
+		justify-content: center; /*so that contents stays in the center*/
+		align-items: stretch; /*so that the content covers the full part of the 
+								displaying box, and as our p tags will be displayed column wise*/
+		align-content: flex-start; /*so that when the limits exceeds the content always stuck to the top*/
 
 }
 .sub-text-flex-box p {
@@ -78,7 +76,7 @@ p,h2{
 	font-family: 'Merriweather',serif;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) { /*for mobile devices reducing size of fonts and aligning it to the top*/
 	.title-flex-box {
 		align-items: flex-start;
 		padding-top: 30px;
