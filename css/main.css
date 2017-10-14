@@ -40,18 +40,19 @@ p,h2{
 	font-family: 'Open Sans', sans-serif;	
 	text-align: center;
 	display: flex;
-		flex-direction: row; /* row, heading will be displayed row wise*/
+		flex-direction: column; /* row, heading will be displayed row wise*/
 		flex-wrap: wrap; /* wrap, so that it gets wrap if things are small*/
-		justify-content: center; /*so that contents stays in the center*/
-		align-content: center; /*so that it always align in the center*/
+		justify-content: flex-end; /*so that contents stays in the end*/
+		align-content: flex-end; /*so that it always align in the center*/
+		align-items: center; /*so that it always align in the center*/
 		
-		align-items: flex-end; /*so thst goes in the end of the container box*/ /*Also in MediaQuery*/
+		align-content: flex-end; /*so thst goes in the end of the container box*/ /*Also in MediaQuery*/
 		padding-bottom: 50px; /*Also in MQ*/
 
 
 }
 .title-flex-box h2 {
-	font-size: 70px; /*Also in MQ*/
+	font-size: 60px; /*Also in MQ*/
 }
 
 .sub-text-flex-box {
@@ -69,6 +70,12 @@ p,h2{
 		align-content: flex-start; /*so that when the limits exceeds the content always stuck to the top*/
 
 }
+.img-circle {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+
+}
 .sub-text-flex-box p {
 	font-size: 20px; /*MQ*/
 	padding: 10px;
@@ -77,13 +84,17 @@ p,h2{
 }
 
 @media screen and (max-width: 360px) { /*for mobile devices reducing size of fonts and aligning it to the top*/
-	.title-flex-box {
-		align-items: flex-start;
+	.title-flex-box {		
 		padding-top: 30px;
 		font-size: 35px;
+		align-content: : flex-start;
 	}	
 	.sub-text-flex-box p{
 		font-size: 15px;
+	}
+	.img-circle {
+		height: 100px;
+		width: 100px;
 	}
 }
 .huge {
