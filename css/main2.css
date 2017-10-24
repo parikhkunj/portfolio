@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+body,html {
+	height: 100%;
+}
+.viewport {
+	height: 100%;
+	
+}
+p,h2{
+	color: black;
+}
+
+
+.f60 {
+	height: 20%;
+}
+.f40 {
+	
+	height: 80%;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	overflow: auto;
+}
+
+.title-flex-box {
+	
+	
+
+	background-color: #F5F5F5;
+	margin:auto;
+	font-family: 'Open Sans', sans-serif;	
+	text-align: center;
+	display: flex;
+		flex-direction: row; /* row, heading will be displayed row wise*/
+		flex-wrap: wrap; /* wrap, so that it gets wrap if things are small*/
+		align-items: flex-start; /*so that it always align in the center*/
+		align-content: flex-start; /*so thst goes in the end of the container box*/
+
+		justify-content: flex-start; /*so that contents stays in the end*/ /*Also in MediaQuery*/
+		padding-bottom: 50px; /*Also in MQ*/
+
+
+}
+.title-flex-box h2 {
+	font-size: 40px; /*Also in MQ*/
+}
+
+.sub-text-flex-box {
+	
+	
+	background-color: #F5F5F5;
+	margin:auto;	
+
+	display: flex;
+		flex-direction: row;/* row, heading will be displayed row wise*/
+		flex-wrap: wrap; /* wrap, so that it gets wrap if things are small*/
+		justify-content: center; /*so that contents stays in the center*/
+		align-items: stretch; /*so that the content covers the full part of the 
+								displaying box, and as our p tags will be displayed column wise*/
+		align-content: flex-start; /*so that when the limits exceeds the content always stuck to the top*/
+
+}
+.img-circle {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+
+}
+.sub-text-flex-box p {
+	font-size: 20px; /*MQ*/
+	padding: 10px;
+	line-height: 150%;
+	font-family: 'Merriweather',serif;
+}
+
+@media screen and (max-width: 360px) { /*for mobile devices reducing size of fonts and aligning it to the top*/
+	.title-flex-box {		
+		padding-top: 30px;
+		font-size: 35px;
+		justify-content: center; /*so that contents stays in the end*/
+		/*align-content: : flex-start;*/
+	}	
+	.sub-text-flex-box p{
+		font-size: 15px;
+	}
+	.img-circle {
+		height: 100px;
+		width: 100px;
+	}
+}
+.huge {
+	font-size: 50px;
+	color: black;
+}
+.huge:hover {
+	font-size: 55px;
+	color: black;
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
