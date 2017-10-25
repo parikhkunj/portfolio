@@ -40,7 +40,7 @@ p,h2{
 
 	background-color: black;
 	margin:auto;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Lobster Two', sans-serif;	
 	text-align: center;
 	display: flex;
 		flex-direction: column; /* row, heading will be displayed row wise*/
@@ -83,7 +83,7 @@ p,h2{
 	font-size: 20px; /*MQ*/
 	padding: 10px;
 	line-height: 150%;
-	font-family: 'Merriweather',serif;
+	font-family: 'Open Sans',serif;
 }
 
 @media screen and (max-width: 360px) { /*for mobile devices reducing size of fonts and aligning it to the top*/
@@ -114,3 +114,21 @@ p,h2{
    background-image:none !important;
    filter:none !important;
 }
+
+.k-button {
+	 background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 16 px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#iKun {color: #FFEB3B}
+#iKno {color: #FFEB3B}
+#iDo  {color: #FFEB3B}
+#iPro {color: #FFEB3B}
+#iSoc {color: #FFEB3B}
+#iCon {color: #FFEB3B}
